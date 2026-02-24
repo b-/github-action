@@ -1,5 +1,70 @@
 # Changelog
 
+## [1.10.2](https://github.com/b-/github-action/compare/v1.11.0...v1.10.2) (2026-02-24)
+
+
+### Features
+
+* add "push" option to allow opting out of pushing ([#118](https://github.com/b-/github-action/issues/118)) ([3cbd26a](https://github.com/b-/github-action/commit/3cbd26afa68ca45d431ecefa1967de4cb724c243))
+* Add ability to squash builds ([#41](https://github.com/b-/github-action/issues/41)) ([f7c352d](https://github.com/b-/github-action/commit/f7c352d0ee88f5ea3e582a3f6153b451b10d418f))
+* add input to use unstable cli ([#17](https://github.com/b-/github-action/issues/17)) ([#26](https://github.com/b-/github-action/issues/26)) ([229504e](https://github.com/b-/github-action/commit/229504e5e1755dbd7b800a074f9800d88a46fc85))
+* add option for --rechunk-clear-plan ([#128](https://github.com/b-/github-action/issues/128)) ([17bffb4](https://github.com/b-/github-action/commit/17bffb4fe1f62964cfd2ce138b509fc84a46e059))
+* add options for build-chunked-oci ([#106](https://github.com/b-/github-action/issues/106)) ([07ff155](https://github.com/b-/github-action/commit/07ff1552f835c213bcb3d580a7178182874dcdde))
+* add provenance verification ([#107](https://github.com/b-/github-action/issues/107)) ([5ff2e30](https://github.com/b-/github-action/commit/5ff2e30c5a437f552d999f735013c70f01204e9f))
+* Add qemu setup ([#121](https://github.com/b-/github-action/issues/121)) ([2fcf3cd](https://github.com/b-/github-action/commit/2fcf3cd5a7844c68ddfa5394ae5b3b12b9593c3f))
+* add registry input ([#14](https://github.com/b-/github-action/issues/14)) ([9f6f8ed](https://github.com/b-/github-action/commit/9f6f8ed00bfc382d4027cb5626ed4e19908c9a5b))
+* add release-please & multi-tag releases ([#12](https://github.com/b-/github-action/issues/12)) ([117a659](https://github.com/b-/github-action/commit/117a659ca3ce9c9b34d623acec1d392736d8158a))
+* add retry_push_count option to expose retry-push CLI options ([#91](https://github.com/b-/github-action/issues/91)) ([2c22aca](https://github.com/b-/github-action/commit/2c22acac43b3d90f1a02cf7ebf9bbc39cd845b4d))
+* Add support for recipes in ./recipes and add cache support ([#39](https://github.com/b-/github-action/issues/39)) ([b121a8f](https://github.com/b-/github-action/commit/b121a8f9ca987bf21989b5ba729d2bcfe0a3e3d4))
+* Add support for specifying a specific version of the CLI ([#51](https://github.com/b-/github-action/issues/51)) ([91ad95d](https://github.com/b-/github-action/commit/91ad95da3fc3d7c3b943d4f8a99d8d0e82b5c487))
+* allow providing options to `bluebuild build` command ([#63](https://github.com/b-/github-action/issues/63)) ([acae198](https://github.com/b-/github-action/commit/acae19810203662c3221286bb6bbb789061efab2))
+* allow skipping the checkout step ([#61](https://github.com/b-/github-action/issues/61)) ([b032506](https://github.com/b-/github-action/commit/b032506226a640040c6fef03d004757d4b3b2184))
+* containerd mount for faster builds and cli version update ([#22](https://github.com/b-/github-action/issues/22)) ([aef8fcf](https://github.com/b-/github-action/commit/aef8fcff7a91c37eaa543269f8f0cab4dceab374))
+* initial github action based on the one in cli readme ([9f7aacc](https://github.com/b-/github-action/commit/9f7aacc0c8086e6bb6944054eea315aecec295c5))
+* make maximizing build space optional ([#18](https://github.com/b-/github-action/issues/18)) ([3052739](https://github.com/b-/github-action/commit/305273971b397c8e9a73524600ec63672ed95227))
+* rechunk support ([#69](https://github.com/b-/github-action/issues/69)) ([848d8e8](https://github.com/b-/github-action/commit/848d8e8e07705afb749590134658b7d1497af0d6))
+* remove base image after building image ([#131](https://github.com/b-/github-action/issues/131)) ([73365bf](https://github.com/b-/github-action/commit/73365bff661db00b0d187bf593442e33cae786ad))
+* set container policy to validate Blue-Build cli signature ([#105](https://github.com/b-/github-action/issues/105)) ([c1c1e56](https://github.com/b-/github-action/commit/c1c1e56702055fb24f60660162e670203f977195))
+* support changing working directory ([#43](https://github.com/b-/github-action/issues/43)) ([41cfe24](https://github.com/b-/github-action/commit/41cfe244bfef69c4db5f7bfdec021aa98d642fb8))
+* upgrade bluebuild cli version ([#31](https://github.com/b-/github-action/issues/31)) ([8be425d](https://github.com/b-/github-action/commit/8be425d5fd6bd1b3009b0cdbff35e4be2970de00))
+
+
+### Bug Fixes
+
+* Add checks for rechunk_clear_plan ([#130](https://github.com/b-/github-action/issues/130)) ([fd09470](https://github.com/b-/github-action/commit/fd094700d13084853ff2a23d3da44e4bc573034f))
+* Allow no token to be passed in ([#49](https://github.com/b-/github-action/issues/49)) ([c4592d4](https://github.com/b-/github-action/commit/c4592d42e43b763c8d68c67947db14b8b6baeb56))
+* builds failing due to input desc examples being evaluated by github ([5d69b36](https://github.com/b-/github-action/commit/5d69b367446f05598400038a52eab06dc81bdf56))
+* builds failing due to input desc examples being evaluated by github ([c0cabfd](https://github.com/b-/github-action/commit/c0cabfd6f6517e49a001ffbe2bd8d11d8d1af212))
+* Check for user-provided `build_opts` ([#71](https://github.com/b-/github-action/issues/71)) ([b22398a](https://github.com/b-/github-action/commit/b22398aebb0d99f2a615f3aea68bb1851b924f7e))
+* cosign version installer tag ([695be33](https://github.com/b-/github-action/commit/695be33a3961f2860463c9974639e8c2a44982cd))
+* Default maximize_build_space to true ([#54](https://github.com/b-/github-action/issues/54)) ([bf3f2a9](https://github.com/b-/github-action/commit/bf3f2a94b58b134c47edf329e49d222f17480438))
+* **EMERGENCY:** Update action.yml ([9675880](https://github.com/b-/github-action/commit/9675880b932f810bfb109252fa47c54238bb1fa1))
+* enable sigstore attachments for container verification ([#111](https://github.com/b-/github-action/issues/111)) ([d150c94](https://github.com/b-/github-action/commit/d150c94be4ab0f45cbfddcf7cd3206df88323781))
+* lock cli version to latest tag ([#10](https://github.com/b-/github-action/issues/10)) ([bfb93ff](https://github.com/b-/github-action/commit/bfb93ff2baf43968d66b53a6a41f5b9cf74cb3a1))
+* missing mkdir ([#113](https://github.com/b-/github-action/issues/113)) ([8484206](https://github.com/b-/github-action/commit/84842061ad1b98ed7419ab6601e516ec11be77ea))
+* missing pubkey dir ([#109](https://github.com/b-/github-action/issues/109)) ([9c9c416](https://github.com/b-/github-action/commit/9c9c416c3ba9b043b01821496592224177ba3c49))
+* Only install podman from opensuse repo if Ubuntu is 22.04 ([#59](https://github.com/b-/github-action/issues/59)) ([5fc9194](https://github.com/b-/github-action/commit/5fc919404609cec4aae8d4b86809cef2ba84bf36))
+* **release-please:** add id to release step to make subsequent steps work ([64942c5](https://github.com/b-/github-action/commit/64942c55e35e567dbd20df06f4583fe4004d9749))
+* Remove extra curly braces ([1e5f19a](https://github.com/b-/github-action/commit/1e5f19ac32e372e81e967a62f88cbd8b9bedfd1f))
+* run build with cli container ([#15](https://github.com/b-/github-action/issues/15)) ([2cccc96](https://github.com/b-/github-action/commit/2cccc962ad4daae4741671898a494351a35a9af7))
+* set pipefail ([#112](https://github.com/b-/github-action/issues/112)) ([90c0826](https://github.com/b-/github-action/commit/90c0826fbf6b7ddeceea05748b2f7c851b8e64f3))
+* shell scripting error ([#114](https://github.com/b-/github-action/issues/114)) ([82144b7](https://github.com/b-/github-action/commit/82144b7f48d7170874cc2b70abecd349f6938f21))
+* switch to new build space maximer action ([#35](https://github.com/b-/github-action/issues/35)) ([4ca0217](https://github.com/b-/github-action/commit/4ca0217c3f353a5c0345b83d209ff72e98525cfe))
+* typo in input validation step ([#115](https://github.com/b-/github-action/issues/115)) ([0235ef4](https://github.com/b-/github-action/commit/0235ef441cf360ca62916f796111c52f8947b32b))
+* Use an array for the args ([#97](https://github.com/b-/github-action/issues/97)) ([13d8262](https://github.com/b-/github-action/commit/13d82627c8c845889a90b32360a9193802d23eaf))
+* use docker to build images ([#16](https://github.com/b-/github-action/issues/16)) ([#29](https://github.com/b-/github-action/issues/29)) ([3475a0c](https://github.com/b-/github-action/commit/3475a0c8e793c7460b42f62c2d970edf2e3918b6))
+* use github runner token when calling the api, to prevent rate li… ([#124](https://github.com/b-/github-action/issues/124)) ([c2fc4f6](https://github.com/b-/github-action/commit/c2fc4f6aff65009c59661c48bdacfc9410376e54))
+
+
+### Performance Improvements
+
+* skip freeing disk space if 80+ GB available ([#136](https://github.com/b-/github-action/issues/136)) ([719dec4](https://github.com/b-/github-action/commit/719dec4aafd6ef1b3e18f291f81808c3ef71bee8))
+
+
+### Miscellaneous Chores
+
+* release 1.10.2 ([37b2706](https://github.com/b-/github-action/commit/37b2706a0be62812f2bdc1ba3085f5767adb2cee))
+
 ## [1.11.0](https://github.com/blue-build/github-action/compare/v1.10.3...v1.11.0) (2026-01-20)
 
 
